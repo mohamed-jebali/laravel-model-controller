@@ -4,6 +4,6 @@
 
 @section('main-content')
     <h1 class='text-center'>
-       Hello World !
+    laravel-model-controller
     </h1>
 @endsection
