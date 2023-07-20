@@ -5,11 +5,13 @@ namespace App\Http\Controllers\Guest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+use App\Models\Movie;
+
 class PageController extends Controller
 {
     public function index(){
-        $movie = movies::where('title');
+        $movies = Movie::all();
 
-        return view('partials.movies',compact('movie'));
+        return view('partials.movies',compact('movies'));
     }
 }
